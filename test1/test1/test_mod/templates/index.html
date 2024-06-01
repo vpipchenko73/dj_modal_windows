@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'css/test.css'%}" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+{% include "_modal.html" %}
+<div> Тестовая запись </div>
+<!--<script src="{% static 'assets/js/bootstrap.js' %}"></script>-->
+
+ <!-- Bootstrap 5 -->
+    <script src="{% static 'js/bootstrap5.modal.forms.js' %}"></script>
+    <!-- You can alternatively load the minified version -->
+    <script src="{% static 'js/bootstrap5.modal.forms.min.js' %}"></script>
+    <script src="{% static 'js/application_functions.js' %}"></script>
+
+ <button type="button" class="read-book btn btn-sm btn-primary" data-form-url="{% url 'read_book' '1' %}">
+          <span class="fa fa-eye">Жмакни</span>
+        </button>
+
+<div class="read-book" style="width: 60px;  height: 60px; margin-left: 300px; margin-top: 300px; background: red;" data-form-url="{% url 'read_book' '1' %}" onclick="Mmm()" >
+Жмакни
+</div>
+
+{% block extrascripts %}
+  <script type="text/javascript">
+
+
+
+
+  </script>
+{% endblock extrascripts %}
+</body>
+</html>

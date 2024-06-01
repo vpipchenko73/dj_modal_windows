@@ -1,0 +1,6 @@
+django-bootstrap-модальные формы 3.0.4
+
+Гитхаб для Боотстрап 5
+https://github.com/trco/django-bootstrap-modal-forms/blob/bootstrap5-examples/examples/templates/index.html
+
+Для боотстрап 4 на ветке мастер

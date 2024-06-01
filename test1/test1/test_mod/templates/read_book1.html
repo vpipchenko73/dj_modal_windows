@@ -1,0 +1,46 @@
+{% comment %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% endcomment %}
+
+
+<div class="modal-header">
+    <h5 class="modal-title">Заголовок модального окна</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+</div>
+
+
+<div class="modal-body">
+    <p>Здесь идет основной текст модального окна</p>
+    <div class="">
+        Title:
+        {{ book.title }}
+    </div>
+    <div class="">
+        Author:
+        {{ book.author }}
+    </div>
+    <div class="">
+        Price:
+        {{ book.price }}
+        €
+    </div>
+    <div class="">
+        Pages:
+        {{ book.pages }}
+    </div>
+    <div class="">
+        Type:
+        {{ book.get_book_type_display }}
+    </div>
+    <div class="">
+        Publication date:
+        {{ book.publication_date }}
+    </div>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+    <button type="button" class="btn btn-primary">Сохранить изменения</button>
+</div>
